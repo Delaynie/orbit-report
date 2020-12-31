@@ -14,7 +14,7 @@ this.operational = operational;
 }
 
 shouldShowWarning(){
-    if(this.type === "Space Debris"){
+    if(this.type.includes("space debris")){
         return true;
     } else {
         return false;
