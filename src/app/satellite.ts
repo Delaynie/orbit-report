@@ -13,12 +13,12 @@ this.orbitType = orbitType;
 this.operational = operational;
 }
 
-shouldShowWarning(){
+/*shouldShowWarning(){
     if(this.type === "Space Debris"){
         return true;
     } else {
         return false;
     }
 
-}
+}*/
 }
