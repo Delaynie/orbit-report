@@ -1,5 +1,6 @@
 <h3>Orbit Report</h3>
 <table>
+
     <tr class="header-row">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
@@ -8,20 +9,12 @@
         <th>Launch Date</th>
     </tr>
 
-    <!-- Hi JC. I think my syntax may be off with the following *ngFor statement.-->
+    <!-- rows and columns of satellites data -->
     <tr *ngFor="let satellite of satellites">
         <td>{{satellite.name}}</td>
-        <td>{{satellite.type}}</td>
+        <td [class.warning]="shouldShowWarning()">{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
     </tr>
     </table>
-
-
-        <!-- Don't mind this code, it was just part of me experimenting with ways of displaying the info!
-        <tr *ngFor="let satellite of satellites">{{satellite.type}}</tr>
-        <tr *ngFor="let satellite of satellites">{{satellite.operational}}</tr>
-        <tr *ngFor="let satellite of satellites">{{satellite.orbitType}}</tr>
-        <tr *ngFor="let satellite of satellites">{{satellite.launchDate}}</tr>
-     -->
