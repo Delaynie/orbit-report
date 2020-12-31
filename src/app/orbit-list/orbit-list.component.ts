@@ -6,6 +6,7 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-list.component.css']
 })
 export class OrbitListComponent implements OnInit {
+  warning: boolean = true;
   @Input() satellites: Satellite[];
   constructor() { }
 
