@@ -14,7 +14,7 @@ export class AppComponent {
   constructor() {
     this.sourceList = [];
     let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
-    this.displayList = [];
+    this.displayList = this.sourceList;
 
     window.fetch(satellitesUrl).then(function(response) {
        response.json().then(function(data) {
