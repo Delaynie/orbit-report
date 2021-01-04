@@ -14,11 +14,11 @@ this.orbitType = orbitType;
 this.operational = operational;
 }
 
-shouldShowWarning() {
-    if(this.type.toLowerCase() === "space debris"){
-        this.warning = true;
-    } else {
-        this.warning = false;
-    }
-}
+//shouldShowWarning() {
+//    if(this.type.toLowerCase() === "space debris"){
+  //      this.warning = true;
+    //} else {
+      //  this.warning = false;
+    //}
+//}
 }
