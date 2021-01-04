@@ -20,6 +20,5 @@ shouldShowWarning() {
     } else {
         this.warning = false;
     }
-
 }
 }
